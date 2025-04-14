@@ -1,6 +1,9 @@
 
-const API_KEY = "10429eac61dca95a970cb7623b232869";
-const BASE_URL = "https://api.themoviedb.org/3";
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
+console.log("VITE_API_KEY:", import.meta.env.VITE_API_KEY);
+console.log("VITE_BASE_URL:", import.meta.env.VITE_BASE_URL);
 
 
 export const getPopularMovies = async () => {
@@ -28,7 +31,7 @@ export const getSimilarMovies = async (movieId) => {
 };
 
 export const searchMovies = async (q) => {
-    const response = await fetch(`${BASE_URL}/search/movie?include_adult=false&page=1?api_key=${API_KEY}&query=${encodeURIComponent(q)}`)
+    const response = await fetch(`${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(q)}`)
     const data = await response.json()
     return data.results
 };

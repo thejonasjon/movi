@@ -10,10 +10,10 @@ function Footer(){
             </div>
 
             <ul className="main-nav flex gap-4">
-                <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="#">Home</a></li>
+                {/* <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="#">Home</a></li>
                 <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="#">Search</a></li>
-                <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="#">Profile</a></li>
-                <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="#">Github</a></li>
+                <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="#">Profile</a></li> */}
+                <li><a className="text-xs font-light text-gray-400 hover:underline hover:text-blue-500 transition-all ease-in-out" href="https://github.com/thejonasjon/movi">Github</a></li>
             </ul>
 
             <div className="flex justify-between items-center">

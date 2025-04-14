@@ -36,7 +36,7 @@ function MovieCard({movie}){
 
                 </div>
                 <div className="absolute inset-0 w-full h-full flex justify-center items-end">
-                        <span className="text-[14px] text-gray-300 font-light mb-3">2025</span>
+                        <span className="text-[14px] text-gray-300 font-light mb-3">{new Date(movie.release_date).getFullYear()}</span>
                 </div>
 
                 <div className="absolute right-2 top-2 z-10">
