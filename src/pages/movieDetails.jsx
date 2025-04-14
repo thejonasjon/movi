@@ -95,13 +95,6 @@ function MovieDetails() {
                 <p>No similar movies</p>
             )
         }
-
-          {/* <SimilarMovieCard />
-          <SimilarMovieCard />
-          <SimilarMovieCard />
-          <SimilarMovieCard />
-          <SimilarMovieCard />
-          <SimilarMovieCard /> */}
         </div>
       </section>
 

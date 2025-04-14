@@ -27,11 +27,22 @@ export const getSimilarMovies = async (movieId) => {
     return data.results;
 };
 
-
-
 export const searchMovies = async (q) => {
     const response = await fetch(`${BASE_URL}/search/movie?include_adult=false&page=1?api_key=${API_KEY}&query=${encodeURIComponent(q)}`)
     const data = await response.json()
     return data.results
 };
+
+export const getUpcomingMovies = async () =>{
+    const response = await fetch(`${BASE_URL}/movie/upcoming?api_key=${API_KEY}`);
+    const data = await response.json();
+    return data.results
+}
+
+export const getGenres = async () => {
+    const response = await fetch(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}`);
+    const data = await response.json();
+    return data.genres
+}
+
 
